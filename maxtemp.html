@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel='stylesheet' href='Resources/CSS/style.css'>
+    <!--- Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    <title>Latitude Analysis Dashboard</title>
+</head>
+</html>
+
+<body>
+
+    
+    <div class="container-fluid" ><!--- Start of Page Container-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"><!--- Start of NavBar -->
+            <div class = 'container-fluid'><!--- Start of NavBar Container Div-->
+                <div class = 'row' style= 'width: 100%'><!--- Start of NavBar Container Row-->
+                    <div class = 'col-md-3'><!---Start of NavBar Title Column-->
+                        <a class="navbar-brand" href="index.html" style='color: white'>Latitude</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div><!---End of NavBar Title Column-->
+                    <div class = 'col-md-9 navbar-links'><!---Start of NavBar Links Column-->
+                        <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="comparison.html">Comparison</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="data.html">Data</a>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!---End of NavBar Links Column-->
+                </div><!--- End of NavBar Container Row-->
+            </div><!--- End of NavBar Container Div-->
+        </nav><!--- End of NavBar Container-->
+
+        <div class="container" id='content-container'><!--- Start of Content Container-->
+            <div class = 'row'><!---Start of Content Row-->
+                <div class = 'col-md-7'><!---Start of Summary Column-->
+                    <article class = 'viz-info'>
+                        <h1> 
+                            Max Temperature
+                        </h1>
+                        <hr/>
+                        <img src = 'Resources/assets/images/Fig1.png' class='big-image'>
+                        <hr/>
+                        <p1>
+                            As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Lattitude).  More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year this data was gathered. 
+                        </p1>
+                    </article>
+                </div><!---End of Summary Column-->
+                <div class = 'col-md-5'><!---Start of Visualization Column-->
+                    <article class = 'viz-info'>
+                        <h2> 
+                            Visualizations
+                        </h2>
+                        <hr/>
+                        <div class= 'container'>
+                            <div class = 'row'>
+                                <div class = 'col-md-6'>
+                                    <a href="maxtemp.html">
+                                        <img style="border:5px groove gold" src = 'Resources/assets/images/Fig1.png' class='visualization-image' >
+                                    </a>
+                                    <a href="cloudiness.html">
+                                        <img src = 'Resources/assets/images/Fig3.png' class='visualization-image' >
+                                    </a>
+                                </div>
+                                <div class = 'col-md-6'>
+                                    <a href="humidity.html">
+                                        <img src = 'Resources/assets/images/Fig2.png' class='visualization-image' >
+                                    </a>
+                                    <a href="wind.html">
+                                        <img src = 'Resources/assets/images/Fig4.png' class='visualization-image' >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div><!---Start of Visualization Column-->
+            </div><!---End of Content Row-->
+        </div><!--- End of Content Container-->
+    </div><!--- Start of Page Container-->
+    <footer class='footer'>
+        &copy; Stevens HW 2020
+    </footer>
+
+
+  </body>
+
+</html>
